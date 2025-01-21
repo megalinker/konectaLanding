@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './MobileMenuComponent.css';
-import KonectaLogo from '/assets/konectaLogo.png'; // Adjust the path as needed
+import KonectaLogo from '/assets/konectaLogo.webp';
 
 interface MobileMenuComponentProps {
     scrollToSection?: (section: string) => void;
@@ -124,7 +124,7 @@ const MobileMenuComponent: React.FC<MobileMenuComponentProps> = ({ scrollToSecti
                     </button>
                 </div>
 
-                {/* Optional: Add a close button (e.g., an 'X' icon) */}
+                {/* Close button */}
                 <button
                     className="mobile-menu-close-button"
                     onClick={closeMenu}

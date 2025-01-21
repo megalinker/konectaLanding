@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import MobileMenuComponent from './components/MobileMenuComponent/MobileMenuComponent';
-
+import KonectaCalendar from './assets/KCal.webp';
+import Home from './components/Home/Home';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -30,12 +31,13 @@ function App() {
 
   const sectionRefs: SectionRefs = {
     home: useRef<HTMLDivElement>(null),
-    games: useRef<HTMLDivElement>(null),
-    highlightedgame: useRef<HTMLDivElement>(null),
     about: useRef<HTMLDivElement>(null),
-    services: useRef<HTMLDivElement>(null),
-    contact: useRef<HTMLDivElement>(null),
-    socials: useRef<HTMLDivElement>(null),
+    faq: useRef<HTMLDivElement>(null),
+    partners: useRef<HTMLDivElement>(null),
+    missions: useRef<HTMLDivElement>(null),
+    roadmap: useRef<HTMLDivElement>(null),
+    events: useRef<HTMLDivElement>(null),
+    team: useRef<HTMLDivElement>(null),
   };
 
   const scrollToSection = (section: keyof SectionRefs) => {
@@ -52,6 +54,7 @@ function App() {
       <Navbar scrollToSection={scrollToSection} openMenu={openMenu} />
 
       {isMenuOpen && <MobileMenuComponent scrollToSection={scrollToSection} closeMenu={closeMenu} />}
+      <Home heroRef={sectionRefs.home} />
     </div>
   );
 }

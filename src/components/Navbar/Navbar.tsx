@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { useMediaQuery } from 'react-responsive';
-import KonectaLogo from '/assets/konectaLogo.png';
+import KonectaLogo from '/assets/konectaLogo.webp';
 
 interface NavbarProps {
     scrollToSection?: (section: string) => void;
@@ -9,8 +9,8 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ scrollToSection, openMenu }) => {
-    // Show hamburger on screens below 950px:
-    const isMobile = useMediaQuery({ query: '(max-width: 1000px)' });
+    // Hamburger on screens below 1000px:
+    const isMobile = useMediaQuery({ query: '(max-width: 1015px)' });
 
     const path1 = 'M500,49 L1273,49';
     const path2 = 'M2044,49 L1273,49';
@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection, openMenu }) => {
                             <button className="navbar-button" onClick={() => scrollToSection && scrollToSection('home')}>
                                 Home
                             </button>
-                            <button className="navbar-button" onClick={() => scrollToSection && scrollToSection('about-us')}>
+                            <button className="navbar-button" onClick={() => scrollToSection && scrollToSection('about')}>
                                 About Us
                             </button>
                             <button className="navbar-button" onClick={() => scrollToSection && scrollToSection('faq')}>
