@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import MobileMenuComponent from './components/MobileMenuComponent/MobileMenuComponent';
 import KonectaCalendar from './assets/KCal.webp';
 import Home from './components/Home/Home';
+import SVGLine from './components/SVGLine/SvgLine';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -55,6 +56,9 @@ function App() {
 
       {isMenuOpen && <MobileMenuComponent scrollToSection={scrollToSection} closeMenu={closeMenu} />}
       <Home heroRef={sectionRefs.home} />
+      <div className="postHeroLine">
+        <SVGLine />
+      </div>
     </div>
   );
 }

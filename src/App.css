@@ -10,3 +10,7 @@
   font-size: clamp(1em, 0.75vw, 1.25rem);
   font-weight: 500;
 }
+
+.postHeroLine {
+  margin-top: 225px;
+}

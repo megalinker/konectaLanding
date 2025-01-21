@@ -8,6 +8,8 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ heroRef }) => {
+
+
     return (
         <div className="hero" ref={heroRef}>
             <p className="sub">USE. LEARN. EARN. PROMOTE.</p>
@@ -42,8 +44,8 @@ const Home: React.FC<HomeProps> = ({ heroRef }) => {
                 </div>
                 <div className="info-container">
                     <p className="sub">DO MISSIONS. EARN TIME. TAKE CONTROL.</p>
-                    <h1 className ="preRegistration">Pre-Registration</h1>
-                    <h3 className ="preRegistration">
+                    <h1 className="preRegistration">Pre-Registration</h1>
+                    <h3 className="preRegistration">
                         Get early access to Konecta and be the first to test, earn, and co-own.
                     </h3>
                     <div className="button-row">
@@ -66,6 +68,7 @@ const Home: React.FC<HomeProps> = ({ heroRef }) => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };
