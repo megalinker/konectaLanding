@@ -1,0 +1,122 @@
+/* Basic styles for the navbar container */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Flex container for logo, center items, and menu button */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    position: relative;
+    padding: 0 2rem;
+}
+
+/* Left: Logo */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Center: Items */
+.navbar-center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-text-background {
+    background-color: #a7b4cd0d;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+
+/* Right: Hamburger button on mobile */
+.navbar-menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    /* pushes it to the right */
+}
+
+/* Buttons styling */
+.navbar-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-button:hover {
+    color: rgb(46, 104, 255);
+}
+
+/* SVG container */
+.navbar-svg-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* The SVG itself */
+.navbar-svg {
+    width: 100%;
+    height: 50px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Pre-Register button styling */
+.navbar-preregister-button {
+    background-color: rgb(46, 104, 255);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-preregister-button:hover {
+    background-color: rgb(36, 94, 245);
+}
+
+@media screen and (max-width:1200px) {
+
+    .navbar-container {
+        display: flex;
+        align-items: center;
+        height: 125px;
+        position: relative;
+        padding: 0 1rem;
+    }
+
+    .navbar-preregister-button {
+        font-size: 1rem;
+    }
+
+    .navbar-button {
+        font-size: 1rem;
+    }
+}
