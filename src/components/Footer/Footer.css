@@ -1,0 +1,70 @@
+.footer {
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    /* Optional: if you want footer fixed at bottom of viewport 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    */
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 100px;
+    position: relative;
+}
+
+.footer-left {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-right a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right img {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* SVG container and styling at the top */
+.footer-svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.footer-svg {
+    width: 100%;
+    height: 50px;
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width:1200px) {
+    .footer-left {
+        font-size: 1rem;
+    }
+
+    .footer-right img {
+        height: 25px;
+    }
+}

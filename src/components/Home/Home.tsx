@@ -26,7 +26,7 @@ const Home: React.FC<HomeProps> = ({ heroRef }) => {
                     Let's GO!
                 </a>
                 <a
-                    href="https://x.com/konectA_Dao"
+                    href="https://x.com/kami_kta"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn secondary"

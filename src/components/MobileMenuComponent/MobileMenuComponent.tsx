@@ -64,13 +64,6 @@ const MobileMenuComponent: React.FC<MobileMenuComponentProps> = ({ scrollToSecti
                         Home
                     </button>
                     <button
-                        onClick={() => handleMenuItemClick('about-us')}
-                        className="mobile-menu-item"
-                        role="menuitem"
-                    >
-                        About Us
-                    </button>
-                    <button
                         onClick={() => handleMenuItemClick('faq')}
                         className="mobile-menu-item"
                         role="menuitem"

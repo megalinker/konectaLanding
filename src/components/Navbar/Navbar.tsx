@@ -10,7 +10,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ scrollToSection, openMenu }) => {
     // Hamburger on screens below 1000px:
-    const isMobile = useMediaQuery({ query: '(max-width: 1015px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 950px)' });
 
     const path1 = 'M500,49 L1273,49';
     const path2 = 'M2044,49 L1273,49';
@@ -33,9 +33,6 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection, openMenu }) => {
                         <div className="navbar-text-background">
                             <button className="navbar-button" onClick={() => scrollToSection && scrollToSection('home')}>
                                 Home
-                            </button>
-                            <button className="navbar-button" onClick={() => scrollToSection && scrollToSection('about')}>
-                                About Us
                             </button>
                             <button className="navbar-button" onClick={() => scrollToSection && scrollToSection('faq')}>
                                 FAQ

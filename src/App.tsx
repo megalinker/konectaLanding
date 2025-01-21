@@ -5,6 +5,7 @@ import MobileMenuComponent from './components/MobileMenuComponent/MobileMenuComp
 import KonectaCalendar from './assets/KCal.webp';
 import Home from './components/Home/Home';
 import SVGLine from './components/SVGLine/SvgLine';
+import Footer from './components/Footer/Footer';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -32,7 +33,6 @@ function App() {
 
   const sectionRefs: SectionRefs = {
     home: useRef<HTMLDivElement>(null),
-    about: useRef<HTMLDivElement>(null),
     faq: useRef<HTMLDivElement>(null),
     partners: useRef<HTMLDivElement>(null),
     missions: useRef<HTMLDivElement>(null),
@@ -59,6 +59,7 @@ function App() {
       <div className="postHeroLine">
         <SVGLine />
       </div>
+      <Footer />
     </div>
   );
 }
