@@ -1,6 +1,9 @@
 .team-section {
     text-align: center;
-    padding: 100px 20px;
+    margin-top: max(50px, 4vw);
+    margin-bottom: max(50px, 4vw);
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .team-section h2 {
@@ -13,7 +16,7 @@
     font-size: 1.2em;
     color: rgb(102, 102, 102);
     margin-top: 2em;
-    margin-bottom: 5em;
+    margin-bottom: 4em;
 }
 
 .team-container {

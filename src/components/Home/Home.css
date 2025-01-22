@@ -14,8 +14,11 @@
 }
 
 .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    padding-top: clamp(0.25rem, 1vw, 0.75rem);
+    padding-bottom: clamp(0.25rem, 1vw, 0.75rem);
+    padding-left: clamp(1rem, 2vw, 1.5rem);
+    padding-right: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.75rem, 2.75vw, 1.25rem);
     font-weight: 500;
     border-radius: 8px;
     text-decoration: none;
@@ -88,6 +91,5 @@
 @media screen and (max-width: 600px) {
     .btn {
         padding: 0.5rem 0.75rem;
-        font-size: 0.95rem;
     }
 }

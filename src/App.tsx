@@ -8,6 +8,8 @@ import SVGLine from './components/SVGLine/SvgLine';
 import Footer from './components/Footer/Footer';
 import { Team } from './components/Team/Team';
 import { persons } from './data/persons';
+import PreFooter from './components/PreFooter/PreFooter';
+import FAQ from './components/FAQ/FAQ';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -61,7 +63,15 @@ function App() {
       <div className="postHeroLine">
         <SVGLine />
       </div>
-      <Team persons={persons} />
+      <div ref={sectionRefs.team}>
+        <FAQ />
+      </div >
+      <SVGLine />
+      <div ref={sectionRefs.team}>
+        <Team persons={persons} />
+      </div >
+      <SVGLine />
+      <PreFooter />
       <Footer />
     </div>
   );
