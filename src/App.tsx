@@ -6,6 +6,8 @@ import KonectaCalendar from './assets/KCal.webp';
 import Home from './components/Home/Home';
 import SVGLine from './components/SVGLine/SvgLine';
 import Footer from './components/Footer/Footer';
+import { Team } from './components/Team/Team';
+import { persons } from './data/persons';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -59,6 +61,7 @@ function App() {
       <div className="postHeroLine">
         <SVGLine />
       </div>
+      <Team persons={persons} />
       <Footer />
     </div>
   );

@@ -1,0 +1,85 @@
+.team-section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.team-section h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.team-section h3 {
+    font-size: 1.2em;
+    color: rgb(102, 102, 102);
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.team-card {
+    position: relative;
+    width: 300px;
+    padding: 24px;
+    padding-bottom: 80px;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}
+
+.team-card img.profile {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-card h4 {
+    margin: 0.5em 0 0.25em;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.team-card h5 {
+    margin: 0.25em 0 0.5em;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(46, 104, 255);
+}
+
+.team-card p {
+    margin-top: 33px;
+    color: rgb(102, 102, 102);
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.social-row {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    /* Fixed distance from bottom */
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.social-row a img {
+    width: 20px;
+    height: 20px;
+}

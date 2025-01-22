@@ -44,13 +44,13 @@ const Footer: React.FC = () => {
                     </defs>
 
                     <path
-                        d="M500,49 L1273,49"
+                        d="M500,1 L1273,1"
                         stroke="url(#strokeGradientFooter1)"
                         strokeWidth="1"
                         fill="none"
                     />
                     <path
-                        d="M2044,49 L1273,49"
+                        d="M2044,1 L1273,1"
                         stroke="url(#strokeGradientFooter2)"
                         strokeWidth="1"
                         fill="none"

@@ -31,7 +31,7 @@ const Home: React.FC<HomeProps> = ({ heroRef }) => {
                     rel="noopener noreferrer"
                     className="btn secondary"
                 >
-                    Join as Project
+                    Join as a Project
                 </a>
             </div>
             <div className="image-container calendar-mask">
