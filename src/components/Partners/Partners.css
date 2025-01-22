@@ -1,0 +1,84 @@
+.partners-container {
+    width: 100%;
+    max-width: min(97vw,1500px);
+    margin: 0 auto;
+    margin-top: max(50px, 4vw);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 7vw;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.partners-container h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+
+.carousel::before,
+.carousel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Left fade gradient */
+.carousel::before {
+    left: 0;
+    background: linear-gradient(to right, #0A0118, rgba(0, 0, 0, 0));
+}
+
+/* Right fade gradient */
+.carousel::after {
+    right: 0;
+    background: linear-gradient(to left, #0A0118, rgba(0, 0, 0, 0));
+}
+
+.carousel-track {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    animation: scroll 30s linear infinite;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 2em;
+}
+
+
+.logo-container img {
+    height: 100px;
+    width: auto;
+}

@@ -10,6 +10,9 @@ import { Team } from './components/Team/Team';
 import { persons } from './data/persons';
 import PreFooter from './components/PreFooter/PreFooter';
 import FAQ from './components/FAQ/FAQ';
+import Events from './components/Events/Events';
+import Partners from './components/Partners/Partners';
+import { Partner } from './data/partners';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -54,6 +57,17 @@ function App() {
     }
   };
 
+  const [tooltipData, setTooltipData] = useState<{
+    partner: Partner | null;
+    x: number;
+    y: number;
+  }>({ partner: null, x: 0, y: 0 });
+
+  const handlePartnerHover = (partner: Partner | null, x: number, y: number) => {
+    setTooltipData({ partner, x, y });
+  };
+
+
   return (
     <div className="App">
       <Navbar scrollToSection={scrollToSection} openMenu={openMenu} />
@@ -63,8 +77,36 @@ function App() {
       <div className="postHeroLine">
         <SVGLine />
       </div>
-      <div ref={sectionRefs.team}>
+      <div ref={sectionRefs.faq}>
         <FAQ />
+      </div >
+      <SVGLine />
+      <div ref={sectionRefs.partners}>
+        {tooltipData.partner && (
+          <div className="partnersToolTip"
+            style={{
+              position: "fixed",
+              top: tooltipData.y - 133,
+              left: tooltipData.x + 125,
+              transform: "translateX(-50%)",
+              backgroundColor: "rgba(0, 0, 0, 0.8)",
+              color: "#fff",
+              padding: "1em",
+              borderRadius: "16px",
+              width: "200px",
+              pointerEvents: "none",
+              zIndex: 9999,
+            }}
+          >
+            <h3>{tooltipData.partner.title}</h3>
+            <p>{tooltipData.partner.description}</p>
+          </div>
+        )}
+        <Partners onPartnerHover={handlePartnerHover} />
+      </div >
+      <SVGLine />
+      <div ref={sectionRefs.events}>
+        <Events />
       </div >
       <SVGLine />
       <div ref={sectionRefs.team}>
