@@ -13,6 +13,7 @@ import FAQ from './components/FAQ/FAQ';
 import Events from './components/Events/Events';
 import Partners from './components/Partners/Partners';
 import { Partner } from './data/partners';
+import Roadmap from './components/Roadmap/Roadmap';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -103,6 +104,10 @@ function App() {
           </div>
         )}
         <Partners onPartnerHover={handlePartnerHover} />
+      </div >
+      <SVGLine />
+      <div ref={sectionRefs.roadmap}>
+        <Roadmap />
       </div >
       <SVGLine />
       <div ref={sectionRefs.events}>

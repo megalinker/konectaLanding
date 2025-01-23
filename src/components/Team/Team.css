@@ -2,8 +2,8 @@
     text-align: center;
     margin-top: max(50px, 4vw);
     margin-bottom: max(50px, 4vw);
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 7vw;
+    padding-right: 7vw;
 }
 
 .team-section h2 {
@@ -13,7 +13,6 @@
 }
 
 .team-section h3 {
-    font-size: 1.2em;
     color: rgb(102, 102, 102);
     margin-top: 2em;
     margin-bottom: 4em;

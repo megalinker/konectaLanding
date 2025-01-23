@@ -6,17 +6,17 @@ export interface Partner {
 
 export const partners: Partner[] = [
     {
-        logo: "/assets/OpenChatLogo.svg",
+        logo: "/assets/JPnfid.svg",
         title: "NFID (and NFID Vaults)",
         description: "Made a succesful campaing for NFID Airdrop. Integrated Automatic Validations to NFID Vault related missions"
     },
     {
-        logo: "/assets/OpenChatLogo.svg",
+        logo: "/assets/JPnuance.svg",
         title: "Nuance",
         description: "Added Integration to Nuance following related missions"
     },
     {
-        logo: "/assets/OpenChatLogo.svg",
+        logo: "/assets/ICKitties.webp",
         title: "Paws Arena",
         description: "Integrated a Code Hunt Mission into their game"
     },
@@ -26,12 +26,12 @@ export const partners: Partner[] = [
         description: "Integrated the first OpenChat External CHIT Mission"
     },
     {
-        logo: "/assets/OpenChatLogo.svg",
+        logo: "/assets/CycleOps-Icon.webp",
         title: "ICPTopUp",
         description: "Integrated a Validation Mission for topping up a canister by using their service"
     },
     {
-        logo: "/assets/OpenChatLogo.svg",
+        logo: "/assets/Waterneuron-Icon.webp",
         title: "WaterNeuron",
         description: "Integrated a Validation Mission about staking an ICP Neuron"
     },
